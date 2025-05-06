@@ -4,89 +4,10 @@
     <meta charset="UTF-8">
     <meta name="Marcos" content="width=device-width, initial-scale=1.0">
     <title>Productos - Comercio Online</title>
-    <!-- Fabicom -->
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="Imagenes/favicon.png">
-    
-    <style>
-        /* Estilos generales */
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        /* Estilo del header */
-        header {
-            background-color: #ae94e9;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        header nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        header nav ul li {
-            display: inline;
-            margin: 0 45px;
-        }
-
-        header nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-         /*Agrandar foto*/
-        .imagen{
-            transform: scale(var(--escala, 1));
-            transition: transform 0.25s;
-            position: relative
-    
-        }
-        .imagen:hover{
-            --escala: 1.3;
-            cursor:pointer;
-            position: relative;
-        }
-        /* Estilo del main */
-        main {
-            text-align: center;
-            padding: 20px;
-        }
-
-        table {
-            margin: 0 auto;
-            border-collapse: collapse;
-            width: 100%;
-            text-align: center;
-        }
-
-        table td {
-            width: 200px;
-            padding: 15px;
-            background-color: rgb(217, 218, 217);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        table img {
-            width: 40%;
-            height: auto;
-        }
-
-        table a {
-            color: black;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        /* Estilo del footer */
-        footer {
-            background-color: #ae94e9;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
-    </style>
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="CSS/stylesvent.css">
 </head>
 <body>
     <header>
@@ -94,7 +15,6 @@
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <br>
                 <li><a href="ventaproductos.html">Productos</a></li>
                 <li><a href="paginadecontacto.html">Contacto</a></li>
             </ul>
@@ -103,113 +23,95 @@
 
     <main>
         <h2>Explora nuestros productos</h2>
-        <table>
-            <tbody>
-                <!-- Fila 1 -->
-                <tr>
-                    <td>
-                        <img class="imagen" src="Imagenes/iphone.png" alt="Iphone 16 Pro Max">
-                        <br>
-                        <a href="https://www.pccomponentes.com/movil-apple-iphone-16-pro-max-256gb-titanio-negro-libre">Iphone 16 Pro Max</a>
-                        <p>Titanio negro 256Gb.</p>
-                        <p><strong>Precio: 1469€</strong></p>
-                    </td>
-                    <td>
-                        <img class="imagen"src="Imagenes/samsung.png" alt="Samsung Galaxy S24 Ultra">
-                        <br>
-                        <a href="https://www.pccomponentes.com/movil-samsung-galaxy-s24-ultra-12-256gb-black-titanium-libre">Samsung Galaxy S24 Ultra</a>
-                        <p>Titanio negro 256Gb.</p>
-                        <p><strong>Precio: 989€</strong></p>
-                    </td>
-                    <td>
-                        <img class="imagen"src="Imagenes/xiaomi.png" alt="Xiaomi 14T">
-                        <br>
-                        <a href="https://www.pccomponentes.com/movil-xiaomi-14t-12-512gb-negro-titanio-libre">Xiaomi 14T</a>
-                        <p>Titanio negro 512Gb.</p>
-                        <p><strong>Precio: 518€</strong></p>
-                    </td>
-                </tr>
-    
-                <!-- Fila 2 -->
-                <tr>
-                    <td>
-                        <img class="imagen"src="Imagenes/iphoneR.png" alt="Iphone 13 Reacondicionado">
-                        <br>
-                        <a href="https://www.pccomponentes.com/apple-iphone-13-128gb-medianoche-libre?refurbished">Iphone 13 Reacondicionado</a>
-                        <p>Medianoche 128Gb.</p>
-                        <p><strong>Precio: 409€</strong></p>
-                    </td>
-                    <td>
-                        <img class="imagen"src="Imagenes/google.png" alt="Google Pixel 9">
-                        <br>
-                        <a href="https://www.pccomponentes.com/movil-google-pixel-9-5g-12-128gb-obsidiana-libre">Google Pixel 9</a>
-                        <p>Obsidiana 128Gb.</p>
-                        <p><strong>Precio: 748€</strong></p>
-                    </td>
-                    <td>
-                        <img class="imagen"src="Imagenes/xiaomi13.png" alt="Xiaomi Redmi Note 13">
-                        <br>
-                        <a href="https://www.pccomponentes.com/xiaomi-redmi-note-13-6-128gb-negro-libre">Xiaomi Redmi Note 13</a>
-                        <p>Negro 128Gb.</p>
-                        <p><strong>Precio: 149€</strong></p>
-                    </td>
-                </tr>
-    
-                <!-- Fila 3 -->
-                <tr>
-                    <td>
-                        <img class="imagen"src="Imagenes/samsungm15.png" alt="Samsung Galaxy M15">
-                        <br>
-                        <a href="https://www.pccomponentes.com/movil-samsung-galaxy-m15-5g-4-128gb-azul-claro-libre">Samsung Galaxy M15</a>
-                        <p>Azul claro 128Gb.</p>
-                        <p><strong>Precio: 139€</strong></p>
-                    </td>
-                    <td>
-                        <img class="imagen"src="Imagenes/realme.png" alt="Realme 12 Pro">
-                        <br>
-                        <a href="https://www.pccomponentes.com/movil-realme-12-pro-5g-8-256gb-azul-libre">Realme 12 Pro</a>
-                        <p>Azul 256Gb.</p>
-                        <p><strong>Precio: 249€</strong></p>
-                    </td>
-                    <td>
-                        <img class="imagen"src="Imagenes/samsuna35.png" alt="Samsung Galaxy A35">
-                        <br>
-                        <a href="https://www.pccomponentes.com/samsung-galaxy-a35-5g-8-256gb-azul-libre">Samsung Galaxy A35</a>
-                        <p>Azul cielo 256Gb.</p>
-                        <p><strong>Precio: 90€</strong></p>
-                    </td>
-                </tr>
-    
-                <!-- Fila 4 -->
-                <tr>
-                    <td>
-                        <img class="imagen"src="Imagenes/realme12x.png" alt="Realme 12X">
-                        <br>
-                        <a href="https://www.pccomponentes.com/movil-realme-12x-5g-6-128gb-negro-libre">Realme 12X</a>
-                        <p>Negro 128Gb.</p>
-                        <p><strong>Precio: 139€</strong></p>
-                    </td>
-                    <td>
-                        <img class="imagen"src="Imagenes/blackview.png" alt="Blackview BV9900E">
-                        <br>
-                        <a href="https://www.pccomponentes.com/blackview-bv9900e-6-128gb-negro-libre">Blackview BV9900E</a>
-                        <p>Negro 128Gb.</p>
-                        <p><strong>Precio: 128€</strong></p>
-                    </td>
-                    <td>
-                        <img class="imagen"src="Imagenes/motorola.png" alt="Motorola Moto G24">
-                        <br>
-                        <a href="https://www.pccomponentes.com/movil-motorola-moto-g24-4-128gb-verde-hielo-libre">Motorola Moto G24</a>
-                        <p>Verde Hielo 128Gb.</p>
-                        <p><strong>Precio: 89€</strong></p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+
+        <section class="productos-grid">
+            <!-- Producto -->
+            <div class="producto">
+                <img class="imagen" src="Imagenes/iphone.png" alt="Iphone 16 Pro Max">
+                <a href="https://www.pccomponentes.com/movil-apple-iphone-16-pro-max-256gb-titanio-negro-libre">Iphone 16 Pro Max</a>
+                <p>Titanio negro 256Gb.</p>
+                <p><strong>Precio: 1469€</strong></p>
+            </div>
+            <div class="producto">
+                <img class="imagen" src="Imagenes/samsung.png" alt="Samsung Galaxy S24 Ultra">
+                <a href="https://www.pccomponentes.com/movil-samsung-galaxy-s24-ultra-12-256gb-black-titanium-libre">Samsung Galaxy S24 Ultra</a>
+                <p>Titanio negro 256Gb.</p>
+                <p><strong>Precio: 989€</strong></p>
+            </div>
+            <div class="producto">
+                <img class="imagen" src="Imagenes/xiaomi.png" alt="Xiaomi 14T">
+                <a href="https://www.pccomponentes.com/movil-xiaomi-14t-12-512gb-negro-titanio-libre">Xiaomi 14T</a>
+                <p>Titanio negro 512Gb.</p>
+                <p><strong>Precio: 518€</strong></p>
+            </div>
+            <div class="producto">
+                <img class="imagen" src="Imagenes/iphoneR.png" alt="Iphone 13 Reacondicionado">
+                <a href="https://www.pccomponentes.com/apple-iphone-13-128gb-medianoche-libre?refurbished">Iphone 13 Reacondicionado</a>
+                <p>Medianoche 128Gb.</p>
+                <p><strong>Precio: 409€</strong></p>
+            </div>
+            <div class="producto">
+                <img class="imagen" src="Imagenes/google.png" alt="Google Pixel 9">
+                <a href="https://www.pccomponentes.com/movil-google-pixel-9-5g-12-128gb-obsidiana-libre">Google Pixel 9</a>
+                <p>Obsidiana 128Gb.</p>
+                <p><strong>Precio: 748€</strong></p>
+            </div>
+            <div class="producto">
+                <img class="imagen" src="Imagenes/xiaomi13.png" alt="Xiaomi Redmi Note 13">
+                <a href="https://www.pccomponentes.com/xiaomi-redmi-note-13-6-128gb-negro-libre">Xiaomi Redmi Note 13</a>
+                <p>Negro 128Gb.</p>
+                <p><strong>Precio: 149€</strong></p>
+            </div>
+            <div class="producto">
+                <img class="imagen" src="Imagenes/samsungm15.png" alt="Samsung Galaxy M15">
+                <a href="https://www.pccomponentes.com/movil-samsung-galaxy-m15-5g-4-128gb-azul-claro-libre">Samsung Galaxy M15</a>
+                <p>Azul claro 128Gb.</p>
+                <p><strong>Precio: 139€</strong></p>
+            </div>
+            <div class="producto">
+                <img class="imagen" src="Imagenes/realme.png" alt="Realme 12 Pro">
+                <a href="https://www.pccomponentes.com/movil-realme-12-pro-5g-8-256gb-azul-libre">Realme 12 Pro</a>
+                <p>Azul 256Gb.</p>
+                <p><strong>Precio: 249€</strong></p>
+            </div>
+            <div class="producto">
+                <img class="imagen" src="Imagenes/samsuna35.png" alt="Samsung Galaxy A35">
+                <a href="https://www.pccomponentes.com/samsung-galaxy-a35-5g-8-256gb-azul-libre">Samsung Galaxy A35</a>
+                <p>Azul cielo 256Gb.</p>
+                <p><strong>Precio: 90€</strong></p>
+            </div>
+            <div class="producto">
+                <img class="imagen" src="Imagenes/realme12x.png" alt="Realme 12X">
+                <a href="https://www.pccomponentes.com/movil-realme-12x-5g-6-128gb-negro-libre">Realme 12X</a>
+                <p>Negro 128Gb.</p>
+                <p><strong>Precio: 139€</strong></p>
+            </div>
+            <div class="producto">
+                <img class="imagen" src="Imagenes/blackview.png" alt="Blackview BV9900E">
+                <a href="https://www.pccomponentes.com/blackview-bv9900e-6-128gb-negro-libre">Blackview BV9900E</a>
+                <p>Negro 128Gb.</p>
+                <p><strong>Precio: 128€</strong></p>
+            </div>
+            <div class="producto">
+                <img class="imagen" src="Imagenes/motorola.png" alt="Motorola Moto G24">
+                <a href="https://www.pccomponentes.com/movil-motorola-moto-g24-4-128gb-verde-hielo-libre">Motorola Moto G24</a>
+                <p>Verde Hielo 128Gb.</p>
+                <p><strong>Precio: 89€</strong></p>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Comercio Online | <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Licencia Creative Commons</a></p>
+        <p>&copy; 2024 Comercio Online |
+            <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+                <img src="Imagenes/cc.png" alt="Licencia Creative Commons" width="70">
+            </a>
+        </p>
+        <p>
+            <a href="https://validator.w3.org/" target="_blank">
+                <img src="https://www.w3.org/Icons/valid-html401" alt="HTML Validado" width="88" height="31">
+            </a>
+        </p>
     </footer>
 </body>
 </html>
